@@ -220,3 +220,22 @@ label{
         width: 30rem;
     }
 }
+
+/* forgot-password.html */
+
+.new-header{
+    margin-right: 5rem;
+}
+
+.section2{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section2 > .new-signup{
+    margin: 5rem ;
+}
