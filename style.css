@@ -1,0 +1,173 @@
+:root{
+    --very-black: #1A202C;
+    --dark-gray: #2D3748;
+    --gray: #4A5568;
+    --black: #000000;
+    --white: #E5E5E5;
+    --green: #04C35C;
+}
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.left-container{
+    background-color:#2D3748;
+    height: 100%;
+    width: 50%;
+}
+#image{
+    height: 100%;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    object-fit: cover;
+}
+
+.right-container{
+    height: 100%;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: var(--white);
+    /* justify-content: space-between; */
+
+}
+
+.header{
+    margin:0 10rem ;
+    
+    margin-top: 20rem;
+}
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 10rem;
+    padding: 12rem;
+}
+
+.email >label , .password >label{
+left: 0%;
+right: 84.57%;
+top: 0%;
+bottom: 91.16%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: var(--gray);
+}
+label{
+    display: block;
+    margin-top: 0.4rem;
+}
+
+
+.password .form-control, .email .form-control{
+    left: 0%;
+    right: 0%;
+    top: 56.28%;
+    bottom: 20.47%;
+    height: 50px;
+
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 80%;
+    background-color: var(--white);
+
+}
+
+.email ,.password{
+    margin:1rem 10rem ;
+
+}
+
+::placeholder {
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;  
+
+}
+
+.password >input::placeholder {
+    color: var(--black);
+}
+
+
+.remember{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 10rem;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+}
+
+.remember-left *{
+    display: inline;
+    color: var(--dark-gray);
+}
+.remember-right{
+    display: inline;
+    padding: 0 8rem;
+}
+
+.buttons{
+    border-radius: 5px;
+    margin: 2rem 10rem;
+}
+
+#google{
+    width: 80%;
+    background-color: var(--dark-gray);
+    
+}
+
+#submit{
+    width: 80%;
+    background-color: var(--green);
+}
+
+
+@media (max-width: 800px){
+    .left-container{
+        display: none;
+    }
+
+    .right-container{
+        width: 100%;
+    }
+
+}
